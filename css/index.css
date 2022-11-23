@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#contenedor{
+    width: 1200px;  
+    background: #ffffff;
+    margin: 0.5em auto;
+    padding: 0.5em;
+}
+
+#header{
+    
+    background: #ffffff;
+    border-radius: 1em;
+    
+}
+
+#nav_1{
+    
+    background: #3ADF00;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+#nav_2{
+    
+    background: #0073df;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+#navV{
+    
+    background: #df9800;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+#navA{
+    
+    background: #df0000;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+#contenido{
+    
+    background: #ffffff;
+    margin-top: 1em;
+    
+}
+
+
+
+#footer{
+    
+    background: #3ADF00;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+
+
+
+

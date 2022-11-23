@@ -17,7 +17,7 @@
            <h1>Cuidado Animal</h1>
             </div>
         </div>
-        <div id="nav_3" class="container">
+        <div id="nav_2" class="container-primary">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link text-dark active" href="index.php">Inicio</a>
@@ -34,7 +34,7 @@
             </ul>
         </div>
         <div id="contenido" class="container">
-            VETERINARIO
+            USUARIO
 
         </div>
         <div id="footer" class="container">

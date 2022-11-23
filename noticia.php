@@ -17,24 +17,24 @@
            <h1>Cuidado Animal</h1>
             </div>
         </div>
-        <div id="nav_3" class="container">
+        <div id="nav" class="container">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark active" href="index.php">Inicio</a>
+                    <a class="nav-link active" href="#">Active</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="ingresarP.php">Ingresar Persona</a>
+                    <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="listaP.php">Lista Personas</a>
+                    <a class="nav-link" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="estadisticas.php">Estadisticas</a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                 </li>
-            </ul>
+            </ul>   
         </div>
         <div id="contenido" class="container">
-            VETERINARIO
+            NOTICIAS
 
         </div>
         <div id="footer" class="container">
