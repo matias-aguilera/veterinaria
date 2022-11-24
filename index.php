@@ -23,13 +23,16 @@
                     <a class="nav-link text-dark active" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="ingresarP.php">Ingresar Persona</a>
+                    <a class="nav-link text-dark" href="PublicoNoticia.php">Noticias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="listaP.php">Lista Personas</a>
+                    <a class="nav-link text-dark" href="PublicoHistoria.php">Historia</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="estadisticas.php">Estadisticas</a>
+                    <a class="nav-link text-dark" href="PublicoEmpleados.php">Empleados</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="Publicoingresar.php">Registrar</a>
                 </li>
             </ul>
         </div>
@@ -93,7 +96,7 @@
             </div>
 
         </div>
-        <div id="footer" class="container">
+        <div id="footer_1" class="container">
             <h3>FOOTER</h3>
         </div>
         

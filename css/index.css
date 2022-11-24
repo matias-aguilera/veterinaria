@@ -30,14 +30,14 @@
     border-radius: 1em;
     margin-top: 1em;
 }
-#navV{
+#nav_3{
     
     background: #df9800;
     border-radius: 1em;
     margin-top: 1em;
 }
-#navA{
-    
+#nav_4{
+
     background: #df0000;
     border-radius: 1em;
     margin-top: 1em;
@@ -52,13 +52,30 @@
 
 
 
-#footer{
+#footer_1{
     
     background: #3ADF00;
     border-radius: 1em;
     margin-top: 1em;
 }
-
+#footer_2{
+    
+    background: #0073df;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+#footer_3{
+    
+    background: #df9800;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+#footer_4{
+    
+    background: #df0000;
+    border-radius: 1em;
+    margin-top: 1em;
+}
 
 
 

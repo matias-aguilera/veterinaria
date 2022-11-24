@@ -23,21 +23,19 @@
                     <a class="nav-link text-dark active" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="ingresarP.php">Ingresar Persona</a>
+                    <a class="nav-link text-dark" href="veterinario.php">Mis Datos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="listaP.php">Lista Personas</a>
+                    <a class="nav-link text-dark" href="listaP.php">Datos de Mascotas</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="estadisticas.php">Estadisticas</a>
-                </li>
+                
             </ul>
         </div>
         <div id="contenido" class="container">
             VETERINARIO
 
         </div>
-        <div id="footer" class="container">
+        <div id="footer_3" class="container">
             <h3>FOOTER</h3>
         </div>
         

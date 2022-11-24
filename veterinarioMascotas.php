@@ -17,36 +17,25 @@
            <h1>Cuidado Animal</h1>
             </div>
         </div>
-        <div id="nav_4" class="container">
-             <ul class="nav justify-content-center">
+        <div id="nav_3" class="container">
+            <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link text-dark active" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="admin.php">Crear Admin</a>
+                    <a class="nav-link text-dark" href="veterinario.php">Mis Datos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="adminUsuarios.php">Ver Usuarios</a>
+                    <a class="nav-link text-dark" href="listaP.php">Datos de Mascotas</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="adminMascotas.php">Ver Mascotas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="adminVeterinarios.php">Ver Veterinarios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="adminNoticia.php">Crear Noticia</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="adminNoticiasVer.php">Ver Noticias</a>
-                </li>
+                
             </ul>
         </div>
         <div id="contenido" class="container">
-        ADMIN  
+            Mascotas
 
         </div>
-        <div id="footer_4" class="container">
+        <div id="footer_3" class="container">
             <h3>FOOTER</h3>
         </div>
         

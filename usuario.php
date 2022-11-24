@@ -23,21 +23,20 @@
                     <a class="nav-link text-dark active" href="index.php">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="ingresarP.php">Ingresar Persona</a>
+                    <a class="nav-link text-dark" href="usuario.php">Mis Datos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="listaP.php">Lista Personas</a>
+                    <a class="nav-link text-dark" href="usuarioMascota.php">Mis Mascotas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="estadisticas.php">Estadisticas</a>
-                </li>
+                    <a class="nav-link text-dark" href="usuarioingresar.php">Registrar Mascota</a>            
             </ul>
         </div>
         <div id="contenido" class="container">
             USUARIO
 
         </div>
-        <div id="footer" class="container">
+        <div id="footer_2" class="container">
             <h3>FOOTER</h3>
         </div>
         
