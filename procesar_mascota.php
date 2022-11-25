@@ -27,7 +27,7 @@ $consulta = "INSERT INTO mascota (nombre, animal, raza , edad, nro_id)
 
 //3.- Ejecutar consulta
 if (mysqli_query($conexion, $consulta)) {
-    echo "registro ingresado";
+   include "usuarioingresar.php";
 }else{
     echo "error al ingresar";
 }

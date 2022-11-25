@@ -28,7 +28,7 @@ $consulta = "INSERT INTO veterinario (nombre, rut, correo , telefono, direccion,
 
 //3.- Ejecutar consulta
 if (mysqli_query($conexion, $consulta)) {
-    echo "registro ingresado";
+    include "adminVeterinarios.php";
 }else{
     echo "error al ingresar";
 }

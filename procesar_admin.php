@@ -27,7 +27,7 @@ $consulta = "INSERT INTO admin (rut,nombre, telefono , correo, contraseña)
 
 //3.- Ejecutar consulta
 if (mysqli_query($conexion, $consulta)) {
-    echo "registro ingresado";
+    include "admin.php";
 }else{
     echo "error al ingresar";
 }

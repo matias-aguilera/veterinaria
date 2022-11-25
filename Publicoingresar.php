@@ -105,8 +105,7 @@
                     <td align="center">
                         <input
                         type="submit"  name="enviar" id="enviar" value="enviar" />
-                        <input
-                        type="submit"  name="consultar" id="consultar" value="consultar" />
+                        
                     </td>
                     </tr>
                 </table>

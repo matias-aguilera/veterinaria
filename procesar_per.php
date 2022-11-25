@@ -27,7 +27,7 @@ $consulta = "INSERT INTO persona (nombre, rut, correo , telefono, direccion, con
 
 //3.- Ejecutar consulta
 if (mysqli_query($conexion, $consulta)) {
-    echo "registro ingresado";
+    include "Publicoingresar.php";
 }else{
     echo "error al ingresar";
 }
