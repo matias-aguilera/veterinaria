@@ -31,9 +31,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="PublicoEmpleados.php">Empleados</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="Publicoingresar.php">Registrar</a>
-                </li>
+                
             </ul>
         </div>
         <div id="contenido" class="container">

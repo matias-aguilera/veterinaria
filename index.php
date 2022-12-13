@@ -31,40 +31,32 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="PublicoEmpleados.php">Empleados</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="Publicoingresar.php">Registrar</a>
-                </li>
+                
             </ul>
         </div>
         <div id="contenido" class="container">
             <div class="container">
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                        <img src="img/ej.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="img2/ej.png" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                        <img src="img3/ej.png" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-                
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 
             </div>  
@@ -88,7 +80,7 @@
               
                     </div>
                     <div class="col">
-                        <button type="button" class="btn btn-success">Veterinario</button>    
+                        <button type="button" class="btn btn-warning" href="IngresarVeterinario.php" >Veterinario</button>    
                     </div>
                     <div class="col">
                         <button type="button" class="btn btn-danger">Administrador</button>
