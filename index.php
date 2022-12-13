@@ -70,29 +70,32 @@
             </div>  
 
             <div class="container">
-                <main class="form-signin w-100 m-auto">
-                    <form action="login.php" method="POST">
-                        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
-
-                        <div class="form-floating">
-                        <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
-                        </div>
-
-                        <div class="form-floating">
-                        <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
-                        </div>
-
-                        <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"> Remember me
-                        </label>
-                        </div>
-                        <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                        
-                    </form>
-                </main>
+            <div class="row">
+                <div class="col">
+                
+                </div>
+                <div class="col-5">
+                <h3>Desea Ingresar Como</h3>
+                </div>
+                <div class="col">
+                
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col"></div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary">Usuario</button>
+              
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-success">Veterinario</button>    
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-danger">Administrador</button>
+                    </div>
+                    <div class="col"></div>
+                    
+                </div>                
             </div>
 
         </div>

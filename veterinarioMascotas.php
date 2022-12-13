@@ -26,7 +26,7 @@
                     <a class="nav-link text-dark" href="veterinario.php">Mis Datos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-dark" href="listaP.php">Datos de Mascotas</a>
+                    <a class="nav-link text-dark" href="veterinarioMascotas.php">Datos de Mascotas</a>
                 </li>
                 
             </ul>
