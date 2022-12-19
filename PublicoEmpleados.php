@@ -20,7 +20,7 @@
         <div id="nav_1" class="container">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark active" href="index.php">Inicio</a>
+                    <a class="nav-link text-dark active" href="logout.php">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="PublicoNoticia.php">Noticias</a>
@@ -35,11 +35,70 @@
             </ul>
         </div>
         <div id="contenido" class="container">
-            EMpleados
+            <h3>Veterinarios Asociados con la Veterinaria:</h3>
+        <table class="table table-bordered">
+
+            <thead>
+                <tr>
+                    
+                    <th>Nombre</th>                    
+                    <th>Correo</th>                    
+                    <th>Especialidad</th>
+
+                </tr>
+                <tbody>
+                    <?php 
+
+                        $host = "localhost";
+                        $user ="root";
+                        $pass="";
+                        $db="veterinariabd";
+
+                        $conn= mysqli_connect($host, $user,$pass,$db);
+
+                        $query ="SELECT * FROM veterinario";
+                        $result_tarea = mysqli_query( $conn,$query);
+
+                        while ( $row = mysqli_fetch_array($result_tarea)){ ?>
+
+                                <tr>
+                                    
+                                    <td><?php echo $row['nombre'] ?></td>
+
+                                    <td><?php echo $row['correo'] ?></td>
+                                    
+                                    <td><?php echo $row['especialidad'] ?></td>
+                                    
+                                    
+                                </tr>
+
+                            
+                    <?php }?>
+
+                </tbody>
+            </thead>
+
+        </table>
 
         </div>
         <div id="footer_1" class="container">
-            <h3>FOOTER</h3>
+        <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm-4">
+                    <h5>Direccion:</h4>
+                    <h6>23 norte, pasaje Mascota 45645, Viña del Mar</h6>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm-3">
+                    <h5>Contactos:</h4>
+                    <h6>+56987654321</h6>
+                    <h6>+56912345678</h6>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm-3"></div>
+                
+                
+            </div>
         </div>
         
     </div>

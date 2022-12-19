@@ -4,7 +4,7 @@
     $server = "localhost";
     $username ="root";
     $password="";
-    $database="veterinaria";
+    $database="veterinariabd";
 
     try{
         $conn =new PDO("mysql:host=$server;dbname=$database;",$username,$password);

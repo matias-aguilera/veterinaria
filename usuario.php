@@ -20,7 +20,7 @@
         <div id="nav_2" class="container-primary">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-dark active" href="index.php">Inicio</a>
+                    <a class="nav-link text-dark active" href="logout.php">Inicio</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="usuario.php">Mis Datos</a>
@@ -28,8 +28,7 @@
                 <li class="nav-item">
                     <a class="nav-link text-dark" href="usuarioMascota.php">Mis Mascotas</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" href="usuarioingresar.php">Registrar Mascota</a>            
+                            
             </ul>
         </div>
         <div id="contenido" class="container">
@@ -37,7 +36,23 @@
 
         </div>
         <div id="footer_2" class="container">
-            <h3>FOOTER</h3>
+        <div class="row">
+                <div class="col-sm"></div>
+                <div class="col-sm-4">
+                    <h5>Direccion:</h4>
+                    <h6>23 norte, pasaje Mascota 45645, Viña del Mar</h6>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm-3">
+                    <h5>Contactos:</h4>
+                    <h6>+56987654321</h6>
+                    <h6>+56912345678</h6>
+                </div>
+                <div class="col-sm"></div>
+                <div class="col-sm-3"></div>
+                
+                
+            </div>
         </div>
         
     </div>

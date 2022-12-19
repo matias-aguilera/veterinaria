@@ -29,10 +29,10 @@ $consulta = "INSERT INTO mascota (nombre, animal, raza , edad, nro_id, nombreDue
 //3.- Ejecutar consulta
 if (mysqli_query($conexion, $consulta)) {
     $message = 'a creado nueva Mascota';
-    include "veterinarioMascotas.php";
+    include "adminMascotas.php";
 }else{
     $message = 'A ocurrido un error al registrar, Intentelo denuevo';
-    include "veterinarioMascotas.php";
+    include "adminMascotas.php";
     
 }
 
