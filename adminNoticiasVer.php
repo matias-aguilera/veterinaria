@@ -9,6 +9,8 @@
     
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 </head>
 <body>
     <div id="contenedor" class="container">
@@ -43,7 +45,69 @@
             </ul>
         </div>
         <div id="contenido" class="container">
-        ADMIN  Noticias
+        
+        
+            <?php if (!empty($message2)):?>
+            <div class="alert alert-primary" role="alert">
+                    <p><?=  $message2 ?></p>
+            </div>
+            <?php endif; ?>
+            
+            <table class="table table-bordered">
+
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Titulo</th> 
+                        <th>Noticia</th>
+                        <th>Autor</th>
+                        <th>Imajen</th>
+                        <th>QR</th>
+
+                    </tr>
+                    <tbody>
+                        <?php 
+
+                            $host = "localhost";
+                            $user ="root";
+                            $pass="";
+                            $db="veterinariabd";
+
+                            $conn= mysqli_connect($host, $user,$pass,$db);
+
+                            $query ="SELECT * FROM noticia";
+                            $result_tarea = mysqli_query( $conn,$query);
+
+                            while ( $row = mysqli_fetch_array($result_tarea)){ ?>
+
+                                    <tr>
+                                        <td><?php echo $row['id'] ?></td>
+                                        <td><?php echo $row['titulo'] ?></td>
+                                        <td><?php echo $row['noticia'] ?></td>
+                                        <td><?php echo $row['autor'] ?></td>
+                                        <td><?php echo $row['img'] ?></td>
+                                        <td></td>
+                                        
+                                        <td>
+                                            <a href="editarNoticia.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
+                                            <i class="fas fa-marker"></i> <!-- editar-->
+                                            </a> 
+                                            <a href="eliminarNoticia.php?id=<?php echo $row['id']?>" class="btn btn-danger">
+                                            <i class="far fa-trash-alt"></i> <!-- eliminar-->
+                                            </a>
+                                        </td>
+                                        
+                                    </tr>
+
+                                
+                        <?php }?>
+    
+                    </tbody>
+                </thead>
+
+            </table>
+                
+
 
         </div>
         <div id="footer_4" class="container">

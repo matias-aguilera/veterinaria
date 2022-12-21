@@ -35,33 +35,55 @@
             </ul>
         </div>
         <div id="contenido" class="container">
-            <h3>Noticias</h3>
-        <div class="row">
-            <div class="col-6 col-sm-4">noticia1</div>
-            <div class="col-6 col-sm-4">noticia2</div>
-
         
-            <div class="w-100 d-none d-md-block"></div>
-
-            <div class="col-6 col-sm-4"><br></div>
-            <div class="col-6 col-sm-4"><br></div>
-
-            <div class="w-100 d-none d-md-block"></div>
-
-            <div class="col-6 col-sm-4">noticia3</div>
-            <div class="col-6 col-sm-4">noticia4</div>
-            <div class="w-100 d-none d-md-block"></div>
-
-            <div class="col-6 col-sm-4"><br></div>
-            <div class="col-6 col-sm-4"><br></div>
-
-            <div class="w-100 d-none d-md-block"></div>
-
-            <div class="col-6 col-sm-4">noticia5</div>
-            <div class="col-6 col-sm-4">noticia6</div>
+        
+        <?php if (!empty($message2)):?>
+        <div class="alert alert-primary" role="alert">
+                <p><?=  $message2 ?></p>
         </div>
+        <?php endif; ?>
+        
+        <table class="table table-bordered">
 
-        </div>
+            <thead>
+                <tr> 
+                    <th>Imajen</th>                   
+                    <th>Titulo</th>   
+                    <th>QR</th>
+
+                </tr>
+                <tbody>
+                    <?php 
+
+                        $host = "localhost";
+                        $user ="root";
+                        $pass="";
+                        $db="veterinariabd";
+
+                        $conn= mysqli_connect($host, $user,$pass,$db);
+
+                        $query ="SELECT * FROM noticia";
+                        $result_tarea = mysqli_query( $conn,$query);
+
+                        while ( $row = mysqli_fetch_array($result_tarea)){ ?>
+
+                                <tr>
+                                    <td><?php echo $row['img'] ?></td>
+                                    <td><?php echo $row['titulo'] ?></td>
+                                    <td></td>
+                                </tr>
+
+                            
+                    <?php }?>
+
+                </tbody>
+            </thead>
+
+        </table>
+            
+
+
+    </div>
         <div id="footer_1" class="container">
         <div class="row">
                 <div class="col-sm"></div>

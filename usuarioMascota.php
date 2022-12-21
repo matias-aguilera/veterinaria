@@ -159,12 +159,17 @@
                                                 <td><?php echo $row['raza'] ?></td>
                                                 <td><?php echo $row['edad'] ?></td>
                                                 <td><?php echo $row['nro_id'] ?></td>
-                                                <td><?php echo $row['datos'] ?></td>
-                                                
+                                                <td><?php echo $row['datos'] ?>
+                                                <td>      
+                                                    <a href="Pdf.php?id=<?php echo $row['id']?>" class="btn btn-danger">
+                                                    PDF<!-- PDF-->
+                                                    </a>
+                                                </td>
                                             
                                                 
                                             </tr>
-
+                                            
+                                              
                                         
                                 <?php }?>
           

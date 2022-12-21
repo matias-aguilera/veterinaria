@@ -10,22 +10,25 @@
   
     $conn = mysqli_connect($host, $user, $pass, $db);
 
-   if (!empty($_POST['correo']) && !empty($_POST['password'])) {
-    $records = $conn->prepare('SELECT id, correo, password FROM persona WHERE correo = :correo');
-    $records->bindParam(':correo', $_POST['correo']);
-    $records->execute();
-    $results = $records->fetch(PDO::FETCH_ASSOC);
-
     
 
-    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
-      $_SESSION['id'] = $results['id'];
-      header('Location: usuario.php'); // adonde va una ves ingresado
-    } else {
-      $message = 'Sorry, correo y clave no coinciden';
-      
+    if (!empty($_POST['correo']) && !empty($_POST['password'])) {
+        $records = $conn->prepare('SELECT id, correo, password FROM persona WHERE correo = :correo');
+        $records->bindParam(':correo', $_POST['correo']);
+        $records->execute();
+        $results = $records->fetch(PDO::FETCH_ASSOC);
+        
+        
+        $message = '';
+    
+        if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+          $_SESSION['usuario_id'] = $results['id'];
+          header('Location: usuario.php'); // adonde va una ves ingresado
+        } else {
+          $message = 'Sorry, correo y clave no coinciden';
+        }
     }
-  }
+      
 
 ?>
 
@@ -68,9 +71,9 @@
 
                 <form action="IngresarUsuario.php" method="POST" >
 
-                <input type="text"   name="email" placeholder="ingrese email"> <br>   
-                <input type="password" name="password" placeholder="ingrese clave"><br>
-                <input type="submit" value="send">
+                <input type="text"   name="correo" placeholder="ingrese email"/> <br>   
+                <input type="password" name="password" placeholder="ingrese clave"/><br>
+                <input type="submit" value="send"/>
                 </form>
 
 

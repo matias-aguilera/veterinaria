@@ -188,11 +188,14 @@
                                                 <td><?php echo $row['datos'] ?></td>
                                                 
                                                 <td>
-                                                    <<a href="editarMasc.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
+                                                    <a href="editarMasc.php?id=<?php echo $row['id']?>" class="btn btn-secondary">
                                                     <i class="fas fa-marker"></i> <!-- editar-->
-                                                    </a> <br>
+                                                    </a> 
                                                     <a href="eliminarMasc.php?id=<?php echo $row['id']?>" class="btn btn-danger">
                                                     <i class="far fa-trash-alt"></i> <!-- eliminar-->
+                                                    </a>
+                                                    <a href="Pdf.php?id=<?php echo $row['id']?>" class="btn btn-warning">
+                                                    PDF<!-- PDF-->
                                                     </a>
                                                 </td>
                                                 

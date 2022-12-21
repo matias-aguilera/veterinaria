@@ -1,3 +1,57 @@
+<?php
+  
+  $host = "localhost";
+  $user = "root";
+  $pass = "";
+  $db = "veterinariabd";
+
+  $conn = mysqli_connect($host, $user, $pass, $db);
+
+  if (isset($_GET['id'])){
+       $id = $_GET['id'];
+       $query = "SELECT * FROM veterinario where id=$id";
+       $result = mysqli_query($conn, $query);
+     
+       if(mysqli_num_rows($result) == 1){
+        $row = mysqli_fetch_array($result);
+        $nombre = $row ['nombre'];
+        $rut = $row ['rut'];
+        $correo = $row ['correo'];
+        $telefono = $row ['telefono'];
+        $direccion = $row ['direccion'];
+        $especialidad = $row['especialidad'];
+        $password = $row ['password'];
+       }
+
+
+       if (isset($_POST['editar'])){
+        $id = $_GET['id'];
+        $nombre = $_POST['nombre'];
+        $rut = $_POST ['rut'];
+        $correo =$_POST['correo'];
+        $telefono = $_POST['telefono'];
+        $direccion = $_POST['direccion'];
+        $especialidad = $_POST['especialidad'];
+        $password =$_POST['password'];
+        
+
+        $query = "UPDATE veterinario SET nombre = '$nombre', rut = '$rut', correo = '$correo', telefono = '$telefono', direccion = '$direccion', especialidad = '$especialidad',  password = '$password'  where id = $id";
+        $result = mysqli_query($conn, $query);
+
+        $_SESSION['message'] ='tarea actualizada';
+        $_SESSION['message_type'] ='success';
+
+
+        header("location: veterinario.php");
+
+
+
+       }
+
+       
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,8 +85,106 @@
                 
             </ul>
         </div>
-        <div id="contenido" class="container">
-            VETERINARIO
+        <div class ="container p-4">
+
+            <div class="row">
+            
+            <div class="col-md-4 mx-auto">
+
+                    <div class ="card card-body">
+
+                            <form action="veterinario.php?id=<?php  echo $_GET['id'];?>" method='POST'>
+                                
+
+                                <h5>ACTUALIZAR Datos:</h5>
+                                <table border="0" align="center">
+                                <tr>
+                                        <td>
+                                        Nombre:
+                                        </td>
+                                        <td>
+                                        <label for="nombre"></label>
+                                            <input type="text" name="nombre" value="<?php echo $nombre; ?>" class="form-control"></input>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Rut:
+                                        </td>
+                                        <td>
+                                            <label for="rut"></label>
+                                            <input type="text" name="rut" value="<?php echo $rut; ?>" class="form-control"></input>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                        Correo:
+                                        </td>
+                                        <td>
+                                            <label for="correo"></label>
+                                            <input type="text" name="correo" value="<?php echo $correo; ?>" class="form-control"></input>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                        Telefono:
+                                        </td>
+                                        <td>
+                                            <label for="telefono"></label>
+                                            <input type="text" name="telefono" value="<?php echo $telefono; ?>" class="form-control"></input>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td>
+                                            Direccion:
+                                        </td>
+                                        <td>
+                                            <label for="direccion"></label>
+                                            <input type="text" name="direccion" value="<?php echo $direccion; ?>" class="form-control"></input>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Especialidad:
+                                        </td>
+                                        <td>
+                                        <label for="especialidad"></label>
+                                            <input type="text" name="especialidad" value="<?php echo $especialidad; ?>" class="form-control"></input>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Contraseña:
+                                        </td>
+                                        <td>
+                                            <label for="password"></label>
+                                            <input type="text" name="password" value="<?php echo $password; ?>" class="form-control"></input>
+                                        </td>
+                                    <tr>
+                                            
+                                    <tr>
+                                        <td>&nbsp;</td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            <input
+                                            type="submit"  name="editar" id="editar" value="editar" />
+                                            
+                                        </td>
+                                    </tr>
+                                </table>
+
+                            </form>
+
+                    </div>
+
+            </div>
+
+            </div>
+
 
         </div>
         <div id="footer_3" class="container">
