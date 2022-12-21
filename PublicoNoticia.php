@@ -47,7 +47,7 @@
 
             <thead>
                 <tr> 
-                    <th>Imajen</th>                   
+                    <th>Imagen</th>                   
                     <th>Titulo</th>   
                     <th>QR</th>
 
