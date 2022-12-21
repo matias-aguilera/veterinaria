@@ -65,11 +65,7 @@
                     <td>Autor</td>
                     <td><input type="text" name="autor" id="autor" size="100"></td>
                 </tr>
-                <tr>
-                    <td>Foto</td>
-                    <td><label for="foto"></label>
-                    <input type="file" name="foto" id="foto" accept="image/jpeg" required /></td>
-                </tr>
+                
                 <tr>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>

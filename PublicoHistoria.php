@@ -33,13 +33,21 @@
                 </li>
                
             </ul>
-        </div>
-        <div id="contenido" class="container">
-            <h4>Historia</h4>
-            <h6>Esta veterinaria  fue fundada con  la finalidad de ayudar a los animales para que tengan una mejor calidad de vida e instruir a sus dueños para un mejor cuidado de sus mascotas,
- en los recientes meses se han interagro varios veterinarios de diversas universidades entre ellos personas con experiencia y personas egreasadas las cuales 
- tienen amplias capacidades y conocimientos que se pondran en servicio de nuestra mision de ayudar a los animales.</h6>
-
+        </div>        
+        <div id="contenido" class="container p-4">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Historia</h4>
+                    <h6>Un lugar que tiene como principal objetivo entregar servicios de calidad para las mascotas de nuestra comunidad.
+                        Estos servicios cuentan con personal altamente calificado y empático para poder brindar el mejor cuidado posible para las mascotas.
+                        En el tiempo hemos logrado consolidar un equipo de médicos veterinarios optimo, 
+                        con vasta experiencia en las distintas áreas y especialidades de la medicina veterinaria, 
+                        todos comprometidos con el trabajo y creando valores de tenencia responsable, salud y amor por los animales..</h6>
+                </div>
+                <div class="col-md-8">
+                    <img src='img/historia.jpg'>
+                </div>
+            </div>
         </div>
         <div id="footer_1" class="container">
         <div class="row">

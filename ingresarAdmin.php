@@ -43,7 +43,7 @@
             </ul>
         </div>
         <div id="contenido" class="container">
-        ADMIN  Mascotas
+        Login
 
         </div>
         <div id="footer_4" class="container">

@@ -34,52 +34,58 @@
                
             </ul>
         </div>
-        <div id="contenido" class="container">
-            <h3>Veterinarios Asociados con la Veterinaria:</h3>
-        <table class="table table-bordered">
+        <div id="contenido" class="container p-4">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Veterinarios Asociados con la Veterinaria:</h3>
+                        <table class="table table-bordered">
 
-            <thead>
-                <tr>
-                    
-                    <th>Nombre</th>                    
-                    <th>Correo</th>                    
-                    <th>Especialidad</th>
-
-                </tr>
-                <tbody>
-                    <?php 
-
-                        $host = "localhost";
-                        $user ="root";
-                        $pass="";
-                        $db="veterinariabd";
-
-                        $conn= mysqli_connect($host, $user,$pass,$db);
-
-                        $query ="SELECT * FROM veterinario";
-                        $result_tarea = mysqli_query( $conn,$query);
-
-                        while ( $row = mysqli_fetch_array($result_tarea)){ ?>
-
+                            <thead>
                                 <tr>
                                     
-                                    <td><?php echo $row['nombre'] ?></td>
+                                    <th>Nombre</th>                    
+                                    <th>Correo</th>                    
+                                    <th>Especialidad</th>
 
-                                    <td><?php echo $row['correo'] ?></td>
-                                    
-                                    <td><?php echo $row['especialidad'] ?></td>
-                                    
-                                    
                                 </tr>
+                                <tbody>
+                                    <?php 
 
-                            
-                    <?php }?>
+                                        $host = "localhost";
+                                        $user ="root";
+                                        $pass="";
+                                        $db="veterinariabd";
 
-                </tbody>
-            </thead>
+                                        $conn= mysqli_connect($host, $user,$pass,$db);
 
-        </table>
+                                        $query ="SELECT * FROM veterinario";
+                                        $result_tarea = mysqli_query( $conn,$query);
 
+                                        while ( $row = mysqli_fetch_array($result_tarea)){ ?>
+
+                                                <tr>
+                                                    
+                                                    <td><?php echo $row['nombre'] ?></td>
+
+                                                    <td><?php echo $row['correo'] ?></td>
+                                                    
+                                                    <td><?php echo $row['especialidad'] ?></td>
+                                                    
+                                                    
+                                                </tr>
+
+                                            
+                                    <?php }?>
+
+                                </tbody>
+                            </thead>
+
+                        </table>
+                </div>
+                <div class="col-md-4">
+                    <img src='img/veterinarios.jpg'>
+                </div>
+            </div>
         </div>
         <div id="footer_1" class="container">
         <div class="row">

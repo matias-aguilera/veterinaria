@@ -184,6 +184,9 @@
                                                     <a href="eliminarMascV.php?id=<?php echo $row['id']?>" class="btn btn-danger">
                                                     <i class="far fa-trash-alt"></i> <!-- eliminar-->
                                                     </a>
+                                                    <a href="Pdf.php?id=<?php echo $row['id']?>" class="btn btn-warning">
+                                                    PDF<!-- PDF-->
+                                                    </a>
                                                 </td>
                                                 
                                             </tr>
